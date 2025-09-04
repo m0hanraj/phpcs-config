@@ -5,8 +5,8 @@
     "type": "phpcodesniffer-standard",
     "authors": [
         {
-            "name": "Content Platforms",
-            "email": "contentplatforms@news.co.uk"
+            "name": "Mohanraj",
+            "email": "mohanraj.pachaiyappan@gmail.com"
         }
     ],
     "require": {
