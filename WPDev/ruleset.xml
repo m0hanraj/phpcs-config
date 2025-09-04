@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="NewsPress">
+<ruleset name="WPDev">
 	<config name="minimum_supported_wp_version" value="6.2" />
 	<config name="testVersion" value="8.2-"/>
 
@@ -17,13 +17,14 @@
 	</rule>
 	<rule ref="WordPress-VIP-Go">
 		<severity>5</severity>
+		<exclude name="WordPressVIPMinimum.JS" />
 		<exclude-pattern>tests/*</exclude-pattern>
 	</rule>
 
 	<rule ref="WordPress.WP.I18n">
 		<properties>
 			<property name="text_domain" type="array">
-				<element value="newspress"/>
+				<element value="wpdev"/>
 			</property>
 		</properties>
 	</rule>
@@ -78,6 +79,53 @@
 	<rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
 		<properties>
 			<property name="searchAnnotations" value="true" />
+		</properties>
+	</rule>
+
+	<!-- Enforce custom DocBlock tag order -->
+	<!-- Require specific order of PHPDoc annotations with empty newline between specific groups. -->
+	<rule ref="SlevomatCodingStandard.Commenting.DocCommentSpacing">
+		<properties>
+			<property name="linesCountBeforeFirstContent" value="0"/>
+			<property name="linesCountAfterLastContent" value="0"/>
+			<property name="linesCountBetweenDescriptionAndAnnotations" value="1"/>
+			<property name="linesCountBetweenAnnotationsGroups" value="1"/>
+			<property name="annotationsGroups" type="array">
+				<element value="
+							@phpstan-type,
+							@phpstan-import-type,
+							@SuppressWarnings,
+
+                		"/>
+				<element value="@internal"/>
+				<element value="
+        					@todo,
+        					@package,
+        					@since,
+        					@deprecated,
+        				"/>
+				<element value="
+							@covers,
+							@dataProvider,
+							@coversDefaultClass,
+							@codeCoverageIgnore,
+							@runInSeparateProcess,
+	 						@preserveGlobalState,
+						"/>
+				<element value="
+        					@link,
+        					@see,
+        					@uses,
+        				"/>
+				<element value="
+        					@global,
+        				"/>
+				<element value="
+                            @throws,
+        					@param,
+        					@return,
+        				"/>
+			</property>
 		</properties>
 	</rule>
 

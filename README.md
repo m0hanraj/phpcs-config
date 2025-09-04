@@ -1,4 +1,4 @@
-# nuk-wp-phpcs-config
+# phpcs-config
 
 This library contains WordPress VIP PHPCS configuration.
 
@@ -9,7 +9,7 @@ This library contains WordPress VIP PHPCS configuration.
 ```text
 - .circleci          # CircleCI pipeline configuration files
 - .github            # GitHub configuration files
-- NewsUK             # NewsUK phpcs rulesets
+- WPDev             # WPDev phpcs rulesets
 ```
 
 ## Technical Documentation
@@ -45,12 +45,12 @@ composer require --dev m0hanraj/phpcs-config
 
 ### Using the ruleset
 
-Create a `phpcs.xml.dist` file in your project and add the following to use `NewsUK` ruleset:
+Create a `phpcs.xml.dist` file in your project and add the following to use `WPDev` ruleset:
 
 ```xml
 <?xml version="1.0"?>
-<ruleset name="NewsUK WP PHPCS Rules">
-	<rule ref="NewsUK"/>
+<ruleset name="WPDev WP PHPCS Rules">
+	<rule ref="WPDev"/>
 </ruleset>
 ```
 
