@@ -1,5 +1,5 @@
 {
-    "name": "newsuk/nuk-wp-phpcs-config",
+    "name": "m0hanraj/phpcs-config",
     "description": "PHPCS configuration for WordPress VIP plugins and themes",
     "license": "MIT",
     "type": "phpcodesniffer-standard",
