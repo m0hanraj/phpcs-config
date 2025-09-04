@@ -12,14 +12,6 @@ This library contains WordPress VIP PHPCS configuration.
 - WPDev             # WPDev phpcs rulesets
 ```
 
-## Technical Documentation
-
--   [Package Extensibility](docs/extensibility.md)
-
-## Contribution
-
-More details on how to contribute to this package can be found in the [CONTRIBUTING.md](docs/CONTRIBUTING.md) file.
-
 ### Minimal requirements
 
 -   PHP 8.2
@@ -64,7 +56,7 @@ Add the following to `scripts` section in `composer.json` file to run linting.
 
 ## Tagging and releasing
 
-The content schema uses Semantic Versioning `semver` for versioning. The package is released using [GitHub Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/about-releases). The release process is automated in Circle CI build step. To create a new release, follow these steps:
+The content schema uses Semantic Versioning `semver` for versioning. The package is released using [GitHub Releases](https://docs.github.com/en/github/administering-a-repository/releasing-projects-on-github/about-releases). To create a new release, follow these steps:
 
 -   Update the relevant files with the new version. Commit the updated files.
 -   Push the changes to the `main` branch, by merging the associated pull request
