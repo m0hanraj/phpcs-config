@@ -12,14 +12,6 @@ This library contains WordPress VIP PHPCS configuration.
 - WPDev             # WPDev phpcs rulesets
 ```
 
-## Technical Documentation
-
--   [Package Extensibility](docs/extensibility.md)
-
-## Contribution
-
-More details on how to contribute to this package can be found in the [CONTRIBUTING.md](docs/CONTRIBUTING.md) file.
-
 ### Minimal requirements
 
 -   PHP 8.2
